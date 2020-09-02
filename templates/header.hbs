@@ -1,0 +1,23 @@
+<header>
+    <a href="#"><i class="fas fa-dove"></i> <strong>Pieces of Heaven</strong> <i class="fas fa-dove"></i></a>
+    <ul>
+        {{#if email}}
+        <li>
+            <a>Welcome, {{email}}</a>
+        </li>
+           <li>
+            <a href="#/create">Add Place</a>
+        </li>
+        <li>
+            <a href="#/logout">Logout</a>
+        </li>
+        {{else}}
+        <li>
+            <a href="#/login">Login</a>
+        </li>
+        <li>
+            <a href="#/register">Register</a>
+        </li>
+        {{/if}}
+    </ul>
+</header>

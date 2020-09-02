@@ -1,0 +1,20 @@
+{{>header}}
+<div class="formGroup">
+    <form action="#/edit/{{place.objectId}}" method="post">
+        <h1>Edit Place</h1>
+        <div>
+            <input type="text" placeholder="Movie Title" value="{{place.title}}" name="title">
+        </div>
+        <div>
+            <input type="text" placeholder="Location" name="location" value="">
+        </div>
+        <div>
+            <textarea placeholder="Place Description..." name="description">{{place.description}}</textarea>
+        </div>
+        <div>
+            <input type="text" placeholder="Image Url" value="{{place.imageUrl}}" name="imageUrl">
+        </div>
+        <button type="submit">Edit</button>
+    </form>
+</div>
+{{>footer}}

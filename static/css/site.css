@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: grey;
+}
+
+button{
+    background: transparent;
+    padding: 1em 1.5em;
+    outline: none;
+    border-radius: 1em;
+    border: none;
+    background: rgb(171, 204, 223);
+    cursor: pointer;
+    color: white;
+    width: 100%;
+}
+
+button:hover{
+    background: palevioletred;
+    color: white;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;  
+    margin: 1em;
+}
+
+form{
+    width: 18em;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 1.5em;
+    display: inline-block;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+textarea{
+    width: 100%;
+    margin-bottom: 1.5em;
+    height: 10em;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+h1{
+    margin-bottom: 1.5em;
+}
+
+h2, h3, h4, h5, h6{
+    margin-bottom: 1em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    color: rgb(71, 145, 186);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em 0 2em;
+    min-height: 2em;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(171, 204, 223);
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+
+footer ul{
+    display: flex;
+}
+
+.formGroup{
+/* width: 100%; */
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+.formGroup > form > div {
+    width: 100%;
+}
+
+.card {
+    width: 27%;
+    max-height: 400px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 2em;
+    text-align: center;   
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-bottom: 1em;
+}
+
+.imgContainer{
+    width: 100%;
+    max-height: 70%;
+    overflow: hidden;
+}
+
+.imgContainer > img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    object-fit: contain;
+}
+
+.cardsContainer {
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.first {
+    font-family: 'Indie Flower', cursive;
+    background: url('../images/homeMedium.jpg');
+    height: 80vh;
+    width: 100%;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: white;
+}
+
+.first > h1{
+    color: palevioletred;
+}
+
+header > a{
+    font-family: 'Indie Flower', cursive;
+    color: palevioletred;
+    font-weight: 500;
+}
+
+.detailsContainer{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.detailsImgContainer > img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    object-fit: contain;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+button[value="Search"]{
+    background: palevioletred;
+    color: white;
+}
+
+.info{
+margin: 2em;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: center;
+    margin-top: 2em;
+}
+
+.buttons span{
+    color: palevioletred;
+    font-weight: 800;
+}
+
+#likeBtn{
+    width: 30%;
+}
+
+#error{
+    display: none;
+}
+
+#success{
+    display: none;
+    background-color:rgba(1, 131, 29, 0.541);
+}
+
+.notifications {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(238, 74, 74, 0.699);
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 6px;
+    font-style: italic;
+    box-shadow: 0 5px 10px #cccccc;
+}

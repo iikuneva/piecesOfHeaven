@@ -1,0 +1,25 @@
+{{>header}}
+<div class="detailsContainer">
+    <div class="detailsImgContainer">
+        <img src="{{place.imageUrl}}" alt="Place">
+    </div>
+    <div class="info">
+        <h2>{{place.title}}</h2>
+        <p><strong>Location: </strong>{{place.location}}</p>
+        <p><strong>Description: </strong>{{place.description}}</p>
+        <div class="buttons">
+            {{#if isCreator}}
+            <a href="#/delete/{{place.objectId}}"><button>Delete</button></a>
+            <a href="#/edit/{{place.objectId}}"><button>Edit</button></a>
+            {{else}}
+            {{#if ./isLiked}}
+            <span>Liked {{place.likes.length}}</span>
+            {{else}}
+            {{!-- <a href="#/like/{{place.objectId}}" id="likeBtn">Like</a> --}}
+            <button id="likeBtn">Like</button>
+            {{/if}}
+            {{/if}}
+        </div>
+    </div>
+</div>
+{{>footer}}

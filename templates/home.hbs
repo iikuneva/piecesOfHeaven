@@ -1,0 +1,36 @@
+{{>header}}
+{{#if email}}
+<section class="first">
+    <h1><strong>Pieces of Heaven on Earth</strong></h1>
+    <p>Paradise beaches, Epic Peaks, Gorgeous Waterfalls, Fairytale Caves, Breathtaking Places, and more...</p>
+    <div>
+        <form action="#/search" method="get">
+            <div>
+                <input placeholder="Search" name="search" type="text">
+            </div>
+            <div>
+                <button value="Search">Search</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="second">
+    <div class="cardsContainer">
+        {{#each places}}
+        {{>place}}
+        {{else}}
+        <h3>No places...</h3>
+        {{/each}}
+    </div>
+</section>
+
+{{else}}
+<section class="first">
+    <h1>Pieces of Heaven on Earth</h1>
+    <p>Paradise beaches, Epic Peaks, Gorgeous Waterfalls, Fairytale Caves, Breathtaking Places, and more...</p>
+    <p>Please <a href="#/login"><strong>LOGIN</strong></a>  to add, search, view and lika all amazing places!</p>
+</section>>
+{{/if}}
+
+{{>footer}}
