@@ -1,4 +1,4 @@
-Peaces of Heaven APP
+Pieces of Heaven APP
 
 This Single-Page Application (SPA) using JavaScript, HTML5, CSS, AJAX, REST, Handlebars and Sammy.js with cloud-based backend - Backendless.
 The app lets you to add beautiful places and other users to like them.
